@@ -61,7 +61,6 @@ public class SearchPresenter<Response, Interactor: UseCase>: ObservableObject wh
                     self.isLoading = false
                 }
             }, receiveValue: { list in
-                print("Hasil : \(list)")
                 self.list = list
             })
             .store(in: &cancellables)
